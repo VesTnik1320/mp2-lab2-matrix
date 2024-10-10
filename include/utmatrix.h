@@ -151,7 +151,7 @@ TVector<T> TVector<T>::operator*(const T &val)
 {
 	TVector <T> res(size, StartIndex);
 	for (int i = 0; i < size; i++)
-		res.pVector[i] *= val;
+		res.pVector[i] = pVector[i] * val;
 	return res;
 } 
 
